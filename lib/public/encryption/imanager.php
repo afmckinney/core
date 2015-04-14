@@ -40,10 +40,10 @@ interface IManager {
 	/**
 	 * Registers an encryption module
 	 *
-	 * @param IEncryptionModule $module
+	 * @param callable $module
 	 * @throws ModuleAlreadyExistsException
 	 */
-	function registerEncryptionModule(IEncryptionModule $module);
+	function registerEncryptionModule(callable $callback);
 
 	/**
 	 * Unregisters an encryption module
